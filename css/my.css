@@ -1,0 +1,173 @@
+  .card {
+    width: 350px;
+    border: 1px solid;
+    height: 495px;
+    padding-left: 25px;
+    border-radius: 25px;
+  }
+
+  @charset "UTF-8";
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic);
+  @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  body .con {
+    height: 100vh;
+  }
+  body .con header {
+    height: 50%;
+    background-image: url("http://www.taste.com.au/images/recipes/tas/2012/02/28472_l.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  body .con .card-main {
+    height: 50%;
+    padding: 20px 25px;
+    background-color: white;
+  }
+  body .con .card-main h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    color: #E391C1;
+  }
+  /*body .con .card-main .lead {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #B7C3DD;
+    }*/
+    body .con .card-main .description {
+      font-size: 13px;
+      font-style: bold;
+    }
+
+    @media only screen and (min-width: 620px) {
+      body .con {
+        width: 400px;
+        height: 550px;
+        box-shadow: 0px 0px 126px -21px rgba(0, 0, 0, 0.75);
+      }
+    }
+
+    * {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    button {
+
+      outline: none;
+      height: 40px;
+      text-align: center;
+      width: 130px;
+      border-radius: 40px;
+      background: #fff;
+      border: 2px solid #1ECD97;
+      color: #1ECD97;
+      letter-spacing: 1px;
+      text-shadow: 0;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      -webkit-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+    }
+    button:hover {
+      color: white;
+      background: #2ecc71;
+    }
+    button:active {
+      letter-spacing: 2px;
+    }
+    button:after {
+      content: "";
+    }
+
+    .onclic {
+      width: 40px;
+      border-color: #bbbbbb;
+      border-width: 3px;
+      font-size: 0;
+      border-left-color: #1ECD97;
+      -webkit-animation: rotating 2s 0.25s linear infinite;
+      animation: rotating 2s 0.25s linear infinite;
+    }
+    .onclic:after {
+      content: "";
+    }
+    .onclic:hover {
+      color: #2ecc71;
+      background: white;
+    }
+
+    .validate {
+      font-size: 13px;
+      color: white;
+      background: #1ECD97;
+    }
+    .validate:after {
+      font-family: 'FontAwesome';
+      content: "\f00c";
+    }
+
+    @-webkit-keyframes rotating {
+      from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes rotating {
+      from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    .inf {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .inf + label {
+          width: 400px;
+      height: 240px;
+      background-image: url("http://www.taste.com.au/images/recipes/tas/2012/02/28472_l.jpg");
+      padding-left: 3px;
+      padding-right: 7px;
+      font-size: 1.25em;
+      font-weight: 700;
+      color: white;
+      background-color: rgba(30, 205, 151, 0.7) !important;
+      display: inline-block;
+    }
+
+    .inf:focus + label,
+    .inf + label:hover {
+      background-color: red;
+    }
+
+    .inf + label {
+      cursor: pointer;
+    }
+
+    .inf:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+  }
